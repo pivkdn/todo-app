@@ -12,9 +12,6 @@ export const TodoList: React.FC<TodoListProps> = ({
     onRemove,
     onToggle
 }) => {
-    if (todos.length === 0) {
-        return <p className="center"></p>
-    }
 
     const removeHandler = (event: React.MouseEvent, id: number) => {
         event.preventDefault()
